@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <!--<meta http-equiv="refresh" content="19" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
-    <script type="text/javascript" src="./src/index.js"></script>
-
-    <title>Article</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="./src/styles.css" />
+<link href="src/css/bootstrap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./src/index.js"></script>
+<title>Article</title>
 </head>
 
-<body>
-    <div class="main_container">
-        <div class="container1">
-            <img class="img1" src="./images/drawers.jpg" width="300px" height="230px" />
-            <div class="text_container">
-                <p class="heading">
-                    Shift the overall look and feel by<br /> adding these wonderful touches to furniture in home </p>
-                <p class="content">
-                    Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
-                </p>
-
-                <img class="img2" src="./images/avatar-michelle.jpg" width="30px" height="30px" />
-
-                <!-- <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a> -->
-                <p class="img2-details_name">Michelle Appleton</p>
-                <p class="img2-details_date">28 Jun 2020</p>
-                <img id="share" class="share_post" src="./images/icon-share.svg" href="https://google.com" onclick="show()" />
-
-                <div id="share_sites" class="share_site">
-                    &nbsp;SHARE
-
-                    <img class="facebook" src="./svg/facebook.png" href="https://facebook.com" />
-                    <img class="twitter" src="./svg/twitter.png" />
-                    <img class="pinterest" src="./svg/pinterest.png" />
-                </div>
-            </div>
+<body class="main_container">
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+<div class="row rounded shadow bg-body">
+<div class="card border-0 h-75" style="max-width:600px;">
+  <div class="row">
+    <div class="col-md-4" style="padding-left:0 !important;padding-right:0 !important"> <img class="card-img-top img1 h-100" src="images/drawers.jpg" /> </div>
+    <div class="col-md-8">
+      <div class="card-body h-75" style="font-size:.8em;">
+        <p class="card-title text_container"><strong>Shift the overall look and feel by adding these wonderful touches to furniture in home</strong></p>
+        <p class="card-text content">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to 							     help you make any room feel complete. </p> <div class="row g-2">
+<div class="col-md-2" style="width:18% !important;"><img class="img2" src="./images/avatar-michelle.jpg" width="45px" height="45px"/></div>
+		  <div class="col-md-7" style="width:53% !important;">
+			  <div class="row mx-0 img2-details_name">Michelle Appleton</div>
+		  <div class="row mx-0 img2-details_date">28 Jun 2020</div></div>
+			  <div class="col-md-3 pl-5 mx-3 px-2 align-self-center" style="width:auto;"><img id="share" class="share_post" src="images/sharing.png" width="30px" height="30px" onclick="funAlert()"/></div>
+		  </div>  
+		</div>
         </div>
-    </div>
+      </div>
+	</div>
+  </div>
+	
+  <div id="share_box" class="conatiner float-left" style="z-index:1 !important;">
+		<div class="row" style="width: auto% !important;">
+		<div class="share_site mx-5 ml-5 align-self-end" style="width:auto;"> SHARE 
+			<img class="facebook mx-2 mt-1 mb-1" src="images/facebook.png" href="https://facebook.com" /> 
+			<img class="twitter mx-1 mt-1 mb-1" src="images/twitter.png" /> 
+			<img class="pinterest mx-1 mt-1 mb-1" src="images/pinterest.png" />
+	  </div></div>
+  </div>
+</div>
 </body>
-
 </html>
